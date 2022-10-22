@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --baby-powder: hsla(60, 100%, 99%, 1);
+  --black-chocolate: hsla(57, 90%, 4%, 1);
+  --red-pigment: hsla(358, 85%, 52%, 1);
+  --pine-green: hsla(173, 71%, 28%, 1);
+  --platinum: hsla(0, 0%, 89%, 1);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+  background: var(--black-chocolate);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.CurveBackground {
+  background-position: 10% 0%;
+  background: radial-gradient(
+    circle at 150% 225%,
+    var(--black-chocolate),
+    var(--black-chocolate) 50%,
+    var(--black-chocolate) 75%,
+    white 75%
+  );
+}
+
+@media only screen and (max-width: 700px) {
+  .CurveBackground {
+    height: 80%;
+    margin: auto;
+  }
+}
